@@ -1,0 +1,31 @@
+name: flutter_bisindo
+description: "A new Flutter project."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.9.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  # UPDATE PENTING: Naik versi camera biar akur sama flutter_vision
+  camera: ^0.11.3  
+  image: ^3.3.0
+  flutter_vision: ^2.0.0
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/best_float16.tflite
+    - assets/best_float32.tflite
+    - assets/best_float32_V2.tflite
+    - assets/best_int8.tflite
+    - assets/abjad.jfif
+    - assets/labels.txt
